@@ -1,0 +1,858 @@
+{
+  "contractName": "Decentragram",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "imageCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"imageCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/Decentragram.sol\":\"Decentragram\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/Decentragram.sol\":{\"keccak256\":\"0xf623cc171f6e18869cf4303344f8271cb74bcc4945f12e3ab18369c59b51b0ed\",\"urls\":[\"bzz-raw://bf7ae984f9d72141cd28f96e6dbcb035c5686d049e4a15098d7510f33834e66c\",\"dweb:/ipfs/QmZn5MtvS4bzNB2mevF8Dto5MZDZ3QqMfzE77S8TpqeMW7\"]}},\"version\":1}",
+  "bytecode": "0x6080604052600060015534801561001557600080fd5b506101b5806100256000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806306fdde031461003b57806392053b63146100be575b600080fd5b6100436100dc565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c661017a565b6040518082815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101725780601f1061014757610100808354040283529160200191610172565b820191906000526020600020905b81548152906001019060200180831161015557829003601f168201915b505050505081565b6001548156fea265627a7a72315820e85de1adf6c228c06970569befe4af6eaa068437e2a49a8be353e7991688574264736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806306fdde031461003b57806392053b63146100be575b600080fd5b6100436100dc565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c661017a565b6040518082815260200191505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101725780601f1061014757610100808354040283529160200191610172565b820191906000526020600020905b81548152906001019060200180831161015557829003601f168201915b505050505081565b6001548156fea265627a7a72315820e85de1adf6c228c06970569befe4af6eaa068437e2a49a8be353e7991688574264736f6c63430005100032",
+  "sourceMap": "29:129:0:-;;;104:1;79:26;;29:129;8:9:-1;5:2;;;30:1;27;20:12;5:2;29:129:0;;;;;;;",
+  "deployedSourceMap": "29:129:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;29:129:0;;;;;;;;;;;;;;;;;;;;;;;;56:18;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;56:18:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;79:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;56:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;79:26::-;;;;:::o",
+  "source": "pragma solidity >=0.4.21;\r\n\r\ncontract Decentragram {\r\n  string public name;\r\n  uint public imageCount = 0;\r\n  //mapping(uint => Image) public images;\r\n\r\n  \r\n}\r\n",
+  "sourcePath": "C:\\Users\\aniru\\OneDrive\\Desktop\\Blockchain project\\src\\contracts\\Decentragram.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/Decentragram.sol",
+    "exportedSymbols": {
+      "Decentragram": [
+        7
+      ]
+    },
+    "id": 8,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:25:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7,
+        "linearizedBaseContracts": [
+          7
+        ],
+        "name": "Decentragram",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 7,
+            "src": "56:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "imageCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 7,
+            "src": "79:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 4,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "79:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 5,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "104:1:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 8,
+        "src": "29:129:0"
+      }
+    ],
+    "src": "0:160:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/src/contracts/Decentragram.sol",
+      "exportedSymbols": {
+        "Decentragram": [
+          7
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".21"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:25:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            7
+          ],
+          "name": "Decentragram",
+          "scope": 8
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "name",
+              "scope": 7,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "56:6:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "56:18:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "imageCount",
+              "scope": 7,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 4,
+                "name": "ElementaryTypeName",
+                "src": "79:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 5,
+                "name": "Literal",
+                "src": "104:1:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "79:26:0"
+          }
+        ],
+        "id": 7,
+        "name": "ContractDefinition",
+        "src": "29:129:0"
+      }
+    ],
+    "id": 8,
+    "name": "SourceUnit",
+    "src": "0:160:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x2a521a430e5614515C45A6702fFE2a7F12B6401C",
+      "transactionHash": "0xfa7f6efce857eaafd7ff016444182e348c5ede09e2aa53d0ccfe98126d1943bc"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x39368cC51b727c666560f55FF5e3C5Bb55AedB71",
+      "transactionHash": "0xbf776abf95d3966cf0d955462be22bd8ecb65316e5bae2fedc7862e0e35dd10f"
+    },
+    "1601608424760": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x15de95004A27bF677a9068FC7476cB04dD54a2e6",
+      "transactionHash": "0xc1f9399358505020b649981558e7df6aa9c7e71814736041a279463b6cb99f4d"
+    },
+    "1601616853749": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xfc9BEC67c0EB878884E3e0E5149786ba2f5ac1E6",
+      "transactionHash": "0x26d81e90a3807993257336d22d94e10ad781d28d84108eccfde52c77edea0e1c"
+    },
+    "1602082467755": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbD210cD3aeB0a8a100aA0BE472522B78cbBFD69d",
+      "transactionHash": "0x265f80a952b55b4ffb7c97e429831899dc6c098e2814baa8454f7bd8c5836bcc"
+    },
+    "1602138278662": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xAB971979c361B885c9b20134eBB5eE9044250D41",
+      "transactionHash": "0x31277816fac535411c526bdd463e5f9225ef779ac233209019482e09c6f668af"
+    },
+    "1602139313710": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xE167aa7A4fd5F9A99a3909416B7b38B6cE950636",
+      "transactionHash": "0x1d93cb89c3e1cc4602a02fb570f216ec35ad1894468e4ac61f0a2960a77d0951"
+    },
+    "1602140875825": {
+      "events": {
+        "0xc1d8dfa99b3f84f95d3f0bc4a768addeb97b83b20aef7f9cb6729e126bafd2f9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageCreated",
+          "type": "event"
+        },
+        "0x1be5317bca8d3f70dc1efe89958be71bff36cdca33fc00a6423e25eb2f1d492f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "hash",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tipAmount",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address payable",
+              "name": "author",
+              "type": "address"
+            }
+          ],
+          "name": "ImageTipped",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x382134844EdF5795dF71d33358BB9a7e1f998552",
+      "transactionHash": "0xde9840f088a2b6c3c207ea9e19e9bb1caa1c718f2bf2576397de5538f064c398"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-11-18T04:36:02.160Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
