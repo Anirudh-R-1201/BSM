@@ -73,6 +73,14 @@ class App extends Component {
     }
   }
 
+ 
+
+  tipImageOwner(id, tipAmount) {
+    this.setState({ loading: true })
+    this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
+      this.setState({ loading: false })
+    })
+  }
   uploadImage = description => {
     console.log("Submitting file to ipfs...")
 
@@ -85,19 +93,11 @@ class App extends Component {
       }
 
       this.setState({ loading: true })
-      this.state.decentragram.methods.uploadImage(result[0].hash, description).send({ from: this.state.account }).on('transactionHash', (hash) => {
+      this.state.decentragram.methods.uploadImage(result[0].hash,description).send({from:this.state.account}).on('transactionHash', (hash) =>{
         this.setState({ loading: false })
       })
     })
   }
-
-  tipImageOwner(id, tipAmount) {
-    this.setState({ loading: true })
-    this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
-      this.setState({ loading: false })
-    })
-  }
-
   constructor(props) {
     super(props)
     this.state = {
