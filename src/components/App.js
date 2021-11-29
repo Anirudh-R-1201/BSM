@@ -6,10 +6,8 @@ import Main from './Main'
 import Web3 from 'web3';
 import './App.css';
 
-//Declare IPFS
 const ipfsClient = require('ipfs-http-client')
-const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' }) // leaving out the arguments will default to these values
-
+const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' }) 
 class App extends Component {
 
   async componentWillMount() {
@@ -32,10 +30,9 @@ class App extends Component {
 
   async loadBlockchainData() {
     const web3 = window.web3
-    // Load account
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
-    // Network ID
+   
     const networkId = await web3.eth.net.getId()
     const networkData = Decentragram.networks[networkId]
     if(networkData) {
@@ -43,14 +40,13 @@ class App extends Component {
       this.setState({ decentragram })
       const imagesCount = await decentragram.methods.imageCount().call()
       this.setState({ imagesCount })
-      // Load images
+     
       for (var i = 1; i <= imagesCount; i++) {
         const image = await decentragram.methods.images(i).call()
         this.setState({
           images: [...this.state.images, image]
         })
       }
-      // Sort images. Show highest tipped images first
       this.setState({
         images: this.state.images.sort((a,b) => b.tipAmount - a.tipAmount )
       })
@@ -74,7 +70,6 @@ class App extends Component {
   }
 
  
-
   tipImageOwner(id, tipAmount) {
     this.setState({ loading: true })
     this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
@@ -84,7 +79,6 @@ class App extends Component {
   uploadImage = description => {
     console.log("Submitting file to ipfs...")
 
-    //adding file to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
       console.log('Ipfs result', result)
       if(error) {
@@ -106,7 +100,6 @@ class App extends Component {
       images: [],
       loading: true
     }
-
     this.uploadImage = this.uploadImage.bind(this)
     this.tipImageOwner = this.tipImageOwner.bind(this)
     this.captureFile = this.captureFile.bind(this)
